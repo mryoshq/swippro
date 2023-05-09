@@ -30,7 +30,7 @@ const {
   isAfterContent = false,
 } = Astro.props;
 ---
-<section class="list={[{ 'pt-0 md:pt-0': isAfterContent }, 'bg-rgb(228, 236, 230) dark:bg-slate-800 py-16 md:py-20']}">
+<section class="list={[{ 'pt-0 md:pt-0': isAfterContent }, 'bg-rgb(228, 236, 230) dark:bg-slate-800  ']}">
   <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
     {
       (title || subtitle || highlight) && (
@@ -80,7 +80,8 @@ const {
           )
         }
       </div>
-      <div aria-hidden="true" class="mt-10 md:mt-0">
+      <div aria-hidden="true" class="text-center">
+
         {
           image && (
             <div class="relative m-auto max-w-l">
@@ -89,8 +90,8 @@ const {
               ) : (
                 <Picture
                   class="mx-auto w-full "
-                  width={200}
-                  height={500}
+                  width={449}
+                  height={900}
                   widths={[400, 768]}
                   sizes="(max-width: 768px) 100vw, 432px"
                   aspectRatio="449:900"

@@ -33,6 +33,19 @@
   }
 }
 
+.btn-rough {
+  border-radius: 0.25rem;
+}
+
+.icon-google-play {
+  background-image: url('path/to/google-play-icon.svg');
+}
+
+.icon-apple {
+  background-image: url('path/to/apple-icon.svg');
+}
+
+
 #header.scroll {
   @apply shadow-md md:shadow-lg bg-white md:bg-white/90 md:backdrop-blur-sm dark:bg-slate-900 dark:md:bg-slate-900/90;
 }
