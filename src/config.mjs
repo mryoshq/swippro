@@ -3,13 +3,13 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'Swippro',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://swippro.vercel.app/',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
+  title: 'Swippro - Networking at its best',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    'Swipping never been better - Meet people that help you grow and unleash your potential',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
