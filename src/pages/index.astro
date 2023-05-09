@@ -1,0 +1,166 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <Hero
+    image={{ src: import('~/assets/images/hero.svg'), alt: 'Front image' }}
+  >
+  </Hero>
+
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <Content
+  isReversed
+  isAfterContent
+  items={[
+    {
+      title: 'As an entrepreneur find your co-founder, choose wisely like a spouse 😂',
+    },
+    {
+      title: 'As a freelance, find new opportunities that align with your skills and interests',
+    },
+    {
+      title: 'Nerwork and meet like minded indviduals who share your interests in work, technology and arts',
+    },
+    {
+      title: 'Do not settle for less - find the right match with Swippro today! - Install now ',
+    }
+  ]}
+  image={{
+    src: import('~/assets/images/vintage.svg'),
+    alt: 'Vintage Image',
+  }}
+    >
+    <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Who is Swippro for</h3>
+    Swippro is designed for anyone who is looking to connect with like-minded individuals, whether it be for a job opportunity, a mentorship, or a co-founder. Swippro is the perfect platform to find your perfect match.
+    </Fragment>
+</Content>
+
+
+
+  <Content
+    image={{
+      src: import('~/assets/images/caos.svg'),
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Your NETWORK is your NETWORTH</h3>
+      Find your perfect match with Swippro - whether you're looking for a co-founder. mentor or job opportunity. With Swiopro you have the power to rearch for individuals based on skill. degree, needs, experience, location, and more. Our AI models will understand your needs and propose for you the best suggestions.
+    </Fragment>
+  </Content>
+
+
+
+
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Get your dream career with Swippro."
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Download</span>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Swipe</em>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, ',
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Hone your Profile</span>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis ',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Grow your network!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/creativity.jpg'),
+      alt: 'Steps image',
+    }}
+  />
+
+
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    
+    highlight="FAQs"
+    items={[
+      [
+        {
+          question: 'What do I need to start?',
+          answer:
+            'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+        }
+      ],
+      [
+        {
+          question: "What's an example of when you changed your mind?",
+          answer:
+            "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+        }
+      ],
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    items={[
+      { name: 'Downloads', value: '132K' },
+      { name: 'Stars', value: '24.8K' },
+      { name: 'Forks', value: '10.3K' },
+      { name: 'Users', value: '48.4K' },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    callToAction={{
+      text: 'Get template',
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:download',
+    }}
+  >
+    <Fragment slot="title">
+      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      waste more time! :P
+    </Fragment>
+  </CallToAction>
+</Layout>
