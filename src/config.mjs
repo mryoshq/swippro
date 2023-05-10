@@ -12,7 +12,7 @@ const CONFIG = {
     'Swipping never been better - Meet people that help you grow and unleash your potential',
   defaultImage: defaultImage,
 
-  defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  defaultTheme: 'light:only', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   language: 'en',
   textDirection: 'ltr',
@@ -30,6 +30,6 @@ const CONFIG = {
 
 };
 
-export const SITE = { ...CONFIG, blog: undefined };
-export const BLOG = CONFIG.blog;
+export const SITE = { ...CONFIG};
+
 export const DATE_FORMATTER = CONFIG.dateFormatter;

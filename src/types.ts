@@ -15,13 +15,10 @@ export interface Post {
 
   excerpt?: string;
   category?: string;
-  tags?: Array<string>;
-  author?: string;
+
 
   Content: unknown;
   content?: string;
-
-  readingTime?: number;
 }
 
 export interface MetaSEO {
