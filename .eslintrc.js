@@ -12,6 +12,19 @@ module.exports = {
   rules: {},
   overrides: [
     {
+      "files": ["*.jsx"],
+      "parser": "@typescript-eslint/parser",
+      "extends": ["plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+      "rules": {
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          { "argsIgnorePattern": "^_", "destructuredArrayIgnorePattern": "^_" }
+        ],
+        "@typescript-eslint/no-non-null-assertion": "off"
+      }
+    },    
+    {
       files: ['*.js'],
       rules: {
         'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],

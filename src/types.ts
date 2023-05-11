@@ -16,9 +16,6 @@ export interface Post {
   excerpt?: string;
   category?: string;
 
-
-  Content: unknown;
-  content?: string;
 }
 
 export interface MetaSEO {

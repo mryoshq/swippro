@@ -66,4 +66,25 @@
     @apply rotate-45 translate-y-[-8px] translate-x-[14px];
   }
   
+  .carousel {
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+ 
+  }
+
+.carousel-images {
+    display: flex;
+    gap: 1%;
+    
+}
+
+.carousel-images img {
+    width: 33%;
+    object-fit: cover;
+}
 }  

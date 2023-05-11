@@ -8,6 +8,14 @@ import Content from '~/components/widgets/Content.astro';
 import Note from '~/components/widgets/Note.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
+import hero from '~/assets/images/hero.svg';
+import slider1 from '~/assets/images/slider/slider1.svg';
+import slider2 from '~/assets/images/slider/slider2.svg';
+import slider3 from '~/assets/images/slider/slider3.svg';
+import slider4 from '~/assets/images/slider/slider4.svg';
+import slider5 from '~/assets/images/slider/slider5.svg';
+import slider6 from '~/assets/images/slider/slider6.svg';
+
 
 
 const meta = {
@@ -20,11 +28,20 @@ const meta = {
 <Layout {meta}>
 
   <Hero
-  callToAction={{ text: '', href: '' }}
-  callToAction2={{ text: '', href: '#features' }}
-    image={{ src: import('~/assets/images/hero.svg'), alt: 'Front image' }}
+    callToAction={{ text: 'Google Play', href: '' }}
+    callToAction2={{ text: 'App store', href: '' }}
+    image={{ src: hero, alt: 'Front image' }}
+    images={[
+      { src: slider1.src, alt: 'Image 1' },
+      { src: slider2.src, alt: 'Image 2' },
+      { src: slider3.src, alt: 'Image 3' },
+      { src: slider4.src, alt: 'Image 4' },
+      { src: slider5.src, alt: 'Image 5' },
+      { src: slider6.src, alt: 'Image 6' },
+    ]}
   >
   </Hero>
+
   
   <Note />
 

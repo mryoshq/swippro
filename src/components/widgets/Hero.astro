@@ -1,6 +1,8 @@
 ---
 import { Icon } from 'astro-icon';
 import { Picture } from '@astrojs/image/components';
+import Carousel from '~/components/widgets/Carousel.jsx';
+
 
 interface CallToAction {
   text: string;
@@ -9,32 +11,30 @@ interface CallToAction {
 }
 
 export interface Props {
-  title?: string;
-  subtitle?: string;
   callToAction?: string | CallToAction;
   callToAction2?: string | CallToAction;
-  image?: string | any; // TODO: find HTMLElementProps
+  image?: string | any;
+  images?: string | any;
 }
 
 const {
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
-  content = await Astro.slots.render('content'),
   callToAction = await Astro.slots.render('callToAction'),
   callToAction2 = await Astro.slots.render('callToAction2'),
   image = await Astro.slots.render('image'),
+  images = await Astro.slots.render('images'),
 } = Astro.props;
 ---
 
-
-<section class="relative md:-mt-[76px]">
-  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div class="relative ">
-    <div class="pointer-events-none"></div>
-
-    <div class="">
-      <div class="pt-12 md:pt-20">
-        <div>
+<section class="relative w-full md:flex md:-mt-[76px]">
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+    
+      <div class=" pt-12 md:pt-20">
+        <div class="relative w-full">
+          {
+            images && (
+              <Carousel client:load images={images }  />
+            )
+          }
           {
             image && (
               <div class="relative">
@@ -100,7 +100,6 @@ const {
             }
           </div>
         </div>
-        {content && <Fragment set:html={content} />}
       </div>
     </div>
 </section>
