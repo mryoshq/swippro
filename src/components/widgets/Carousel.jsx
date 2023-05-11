@@ -36,7 +36,7 @@ class Carousel extends React.Component {
      //console.log(this.props.images); 
         return (
            
-            <div className="carousel w-full">
+            <div className="carousel w-full flex justify-center items-center">
                 <button onClick={this.previousSlide}>Previous</button>
                 <div className="carousel-images">
                     {this.state.activeIndexes.map(index => {
