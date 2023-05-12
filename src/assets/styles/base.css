@@ -81,10 +81,31 @@
     display: flex;
     gap: 1%;
     
+    
 }
 
 .carousel-images img {
-    width: 33%;
+  max-width: calc(100vw / 3.5);
     object-fit: cover;
+}
+
+
+
+.arrow {
+  border: solid  rgb(70, 106, 139);;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 15px;
+  margin: 15px;
+}
+
+.arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 }  

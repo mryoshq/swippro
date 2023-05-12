@@ -37,16 +37,24 @@ class Carousel extends React.Component {
         return (
            
             <div className="carousel w-full flex justify-center items-center">
-                <button onClick={this.previousSlide}>Previous</button>
-                <div className="carousel-images">
-                    {this.state.activeIndexes.map(index => {
-                        const image = this.props.images[index];
-                        return (
-                            <img key={index} src={image.src} alt={image.alt} />
-                        );
-                    })}
-                </div>
-                <button onClick={this.nextSlide}>Next</button>
+                <button className="arrow arrow-left" onClick={this.previousSlide}></button>
+            <div className="carousel-images">
+                {this.state.activeIndexes.map(index => {
+                    const image = this.props.images[index];
+                    return (
+                        <img 
+                            key={index}
+                            src={image.src} 
+                            alt={image.alt} 
+                            className="carousel-image"
+                            width="631"
+                            height="658"
+                        />
+                    );
+                })}
+            </div>
+            <button className="arrow arrow-right" onClick={this.nextSlide}></button>
+
             </div>
         );
     }
