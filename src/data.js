@@ -30,6 +30,6 @@ export const footerData = {
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '' },
+    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
   ],
 };

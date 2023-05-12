@@ -34,29 +34,38 @@ class Carousel extends React.Component {
 
     render() {
      //console.log(this.props.images); 
-        return (
-           
-            <div className="carousel w-full flex justify-center items-center">
-                <button className="arrow arrow-left" onClick={this.previousSlide}></button>
-            <div className="carousel-images">
-                {this.state.activeIndexes.map(index => {
-                    const image = this.props.images[index];
-                    return (
-                        <img 
-                            key={index}
-                            src={image.src} 
-                            alt={image.alt} 
-                            className="carousel-image"
-                            width="631"
-                            height="658"
-                        />
-                    );
-                })}
-            </div>
-            <button className="arrow arrow-right" onClick={this.nextSlide}></button>
-
-            </div>
-        );
+     return (
+        <div className="carousel w-full flex justify-center items-center">
+          <button 
+            className="arrow arrow-left" 
+            onClick={this.previousSlide}
+            aria-label="Previous slide"
+          >
+          </button>
+          <div className="carousel-images">
+            {this.state.activeIndexes.map(index => {
+                const image = this.props.images[index];
+                return (
+                    <img 
+                        key={index}
+                        src={image.src} 
+                        alt={image.alt} 
+                        className="carousel-image"
+                        width="631"
+                        height="658"
+                    />
+                );
+            })}
+          </div>
+          <button 
+            className="arrow arrow-right" 
+            onClick={this.nextSlide}
+            aria-label="Next slide"
+          >
+          </button>
+        </div>
+      );
+      
     }
 }
 export default Carousel;
