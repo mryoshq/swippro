@@ -1,10 +1,10 @@
 ---
-title: 'Privacy Policy'
+title: 'About US'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 To be completed
 
-you will find this under src/pages/privacy.md in case you needed another page just duplicate rename and make sure to change the path in data.js
+you will find this under src/pages/ABOUT.md in case you needed another page just duplicate rename and make sure to change the path in data.js
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus in nunc sodales scelerisque non sit amet nisi. Vivamus leo ex, semper finibus mi a, auctor rutrum risus. Fusce ut lectus iaculis, sagittis purus eu, euismod elit. Curabitur a est sed lectus bibendum faucibus. Donec ut consectetur diam. Praesent congue hendrerit nunc, nec blandit magna ultrices in. In a fringilla lacus, ac imperdiet neque. Vestibulum id convallis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam vehicula ligula eu ante vulputate mattis. Nulla scelerisque elit felis, et tempus mauris eleifend et. Sed lacus magna, ultricies non gravida at, suscipit non nisi.

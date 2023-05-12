@@ -1,10 +1,10 @@
 ---
-title: 'Privacy Policy'
+title: 'Contact US'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 To be completed
 
-you will find this under src/pages/privacy.md in case you needed another page just duplicate rename and make sure to change the path in data.js
+you will find this under src/pages/contact.md in case you needed another page just duplicate rename and make sure to change the path in data.js
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus in nunc sodales scelerisque non sit amet nisi. Vivamus leo ex, semper finibus mi a, auctor rutrum risus. Fusce ut lectus iaculis, sagittis purus eu, euismod elit. Curabitur a est sed lectus bibendum faucibus. Donec ut consectetur diam. Praesent congue hendrerit nunc, nec blandit magna ultrices in. In a fringilla lacus, ac imperdiet neque. Vestibulum id convallis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam vehicula ligula eu ante vulputate mattis. Nulla scelerisque elit felis, et tempus mauris eleifend et. Sed lacus magna, ultricies non gravida at, suscipit non nisi.
@@ -21,10 +21,3 @@ Nam iaculis tortor odio, ut sodales tortor dignissim sed. Maecenas enim leo, acc
 
 Maecenas in ultricies neque, ac pulvinar ante. Suspendisse bibendum sem ac libero placerat, a ultricies ante faucibus. Pellentesque sit amet turpis vitae diam consectetur maximus sed sit amet tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi et bibendum ipsum. Vivamus sed lacinia nisl. In convallis metus nec diam congue aliquam. Phasellus ligula felis, facilisis vel est et, vulputate placerat nunc. Praesent condimentum ut nulla quis tristique. Suspendisse potenti. Donec congue porttitor tristique.
 
-Fusce non blandit diam, et lacinia urna. Maecenas urna turpis, ornare vestibulum consectetur a, porta vitae odio. Aliquam vitae nisi velit. Proin sagittis, felis eget pulvinar tristique, turpis leo blandit leo, a imperdiet metus nibh vitae ex. Proin vehicula metus sem, a vestibulum enim sodales sed. Aliquam imperdiet, sapien et efficitur vulputate, orci purus efficitur quam, a porttitor massa lorem eget dolor. Aliquam vulputate odio et lacinia porttitor. Aenean id rutrum eros. Praesent sodales in orci in bibendum. Proin at tortor vel ante mollis placerat. Etiam ac varius nulla. Quisque nisi quam, vestibulum ac tortor id, accumsan porttitor diam. Vestibulum cursus scelerisque augue, vitae consequat nisi semper eu. Nullam porta, sapien sit amet rhoncus dignissim, est velit ultricies ipsum, lacinia blandit odio purus sed nibh.
-
-Pellentesque tincidunt lacinia ipsum, in sollicitudin risus tempor varius. Vivamus metus tortor, congue vitae arcu luctus, tempor rutrum elit. Aenean non lorem porta, condimentum nunc eu, facilisis eros. Sed ultricies felis purus, sed eleifend est laoreet sed. Pellentesque a condimentum purus. Duis a felis cursus, porta turpis eget, finibus arcu. Aenean convallis nulla nec sapien commodo, suscipit pharetra ligula semper. Nullam sodales, risus et rutrum laoreet, ex ligula pellentesque lacus, dignissim interdum urna tellus eget diam. Vivamus elementum enim augue, et tempor neque ullamcorper dapibus. Nunc dictum lacus ut leo placerat efficitur. Aenean eget molestie lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis at risus enim. Mauris sit amet ultrices dui.
-
-Nunc quis ante nibh. Fusce vitae metus at mauris pharetra tristique. Vivamus ut elementum neque, ultricies tincidunt mauris. Praesent justo diam, feugiat at dolor nec, fermentum condimentum velit. Duis in nunc massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc fermentum nulla et nulla pretium, eget lacinia orci pellentesque.
-
-Duis nec augue at orci sagittis condimentum. Donec ac ullamcorper quam, auctor mollis massa. Donec non sem odio. Pellentesque gravida aliquam felis, a vulputate erat semper et. Vestibulum auctor dui urna, in fringilla nisi porttitor sed. Nunc placerat a orci et lacinia. Nullam arcu quam, cursus et lorem eu, suscipit imperdiet orci. Quisque dapibus sapien eu metus molestie, sit amet pharetra ex hendrerit. Nullam tincidunt luctus ullamcorper. Proin volutpat tortor id risus viverra ultricies non et eros.

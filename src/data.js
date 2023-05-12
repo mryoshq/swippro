@@ -4,11 +4,11 @@ export const headerData = {
   links: [
     {
       text: 'Features',
-      href: '#',
+      href: '/features',
     },
     {
       text: 'About',
-      href: '#',
+      href: '/about',
     },
   ],
   actions: [
@@ -20,10 +20,10 @@ export const footerData = {
   
   secondaryLinks: [
     
-    { text: 'About', href: getPermalink('') },
+    { text: 'About', href: getPermalink('/about') },
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy', href: getPermalink('/privacy') },
-    { text: 'Contact', href: getPermalink('') }
+    { text: 'Contact', href: getPermalink('/contact') }
     
   ],
   socialLinks: [
