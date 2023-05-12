@@ -2,6 +2,8 @@
 import { Icon } from 'astro-icon';
 import { Picture } from '@astrojs/image/components';
 import Carousel from '~/components/widgets/Carousel.jsx';
+import appleBadge from '~/assets/images/appstore.svg';
+import googleBadge from '~/assets/images/google-badge.png';
 
 
 interface CallToAction {
@@ -63,18 +65,18 @@ const {
       <div class="relative">
           <div class="flex justify-center items-center md:justify-around md:items-center max-w-2xl mx-auto gap-4">
               <div class="flex w-full sm:w-auto justify-end">
-                  <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" rel="noopener">
+                  <a href="#" target="_blank" rel="noopener">
                       <img
-                          src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                          src={googleBadge.src}
                           alt="Download our app from Google Play Store"
                           style="height: auto; width: 25rem; max-width: calc(100vw / 3);"
                       />
                   </a>
               </div>
               <div class="flex w-full sm:w-auto">
-                  <a href="https://apps.apple.com/app/idyour.app.id" target="_blank" rel="noopener">
+                  <a href="#" target="_blank" rel="noopener">
                       <img
-                          src="https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg"
+                          src={appleBadge.src}
                           alt="Download our app from Apple App Store"
                           style="height: auto; width: 25rem; max-width: calc(100vw / 3);"
                       />
