@@ -4,7 +4,8 @@ import hero from '~/assets/images/hero2.svg';
 
 // Import Swiper styles
 import "swiper/css";
-
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
 function Slider({ images }) {
   return (
@@ -15,9 +16,10 @@ function Slider({ images }) {
       centeredSlides={true}
       spaceBetween={30}
       pagination={{
-        clickable: false,
+        clickable: true,
       }}
-      modules={[]}
+      modules={[Pagination]}
+ 
       className="mySwiper"
       
       breakpoints={{
