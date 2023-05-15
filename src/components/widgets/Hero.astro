@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon';
 import { Picture } from '@astrojs/image/components';
-import Carousel from '~/components/widgets/Carousel.jsx';
+import Slider from '~/components/widgets/Slider.jsx';
 import appleBadge from '~/assets/images/appstore.svg';
 import googleBadge from '~/assets/images/google-badge.png';
 
@@ -27,19 +27,18 @@ const {
 } = Astro.props;
 ---
 
-<section class="relative w-full md:flex ">
-  <div class="relative w-full ">
-  
-    <div class="w-full">
-      <div class="relative w-full">
-        {
-          images && (
-            <Carousel client:visible images={images }  />
-          )
-        }
+<section class="relative w-full md:flex position-relative">
+  <div class="relative w-full">
+    {
+      images && (
+        <div class="absolute w-full h-full top-0 left-0">
+          <Slider client:visible images={images} />
+        </div>
+      )
+    }
         {
           image && (
-            <div class="relative">
+          <div class="relative w-full h-full">
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
