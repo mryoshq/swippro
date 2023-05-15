@@ -1,71 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
-class Carousel extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            activeIndexes: [0, 1, 2]
-        };
-    }
+const Carousel = (props) => {
+    const [activeIndexes, setActiveIndexes] = useState([0, 1, 2]);
 
-    nextSlide = () => {
-        const lastIndex = this.props.images.length - 1;
-        const activeIndexes = this.state.activeIndexes.map(index => {
+    const nextSlide = () => {
+        const lastIndex = props.images.length - 1;
+        const newActiveIndexes = activeIndexes.map(index => {
             const shouldResetIndex = index === lastIndex;
             return shouldResetIndex ? 0 : index + 1;
         });
 
-        this.setState({
-            activeIndexes
-        });
+        setActiveIndexes(newActiveIndexes);
     }
 
-    previousSlide = () => {
-        const lastIndex = this.props.images.length - 1;
-        const activeIndexes = this.state.activeIndexes.map(index => {
+    const previousSlide = () => {
+        const lastIndex = props.images.length - 1;
+        const newActiveIndexes = activeIndexes.map(index => {
             const shouldResetIndex = index === 0;
             return shouldResetIndex ? lastIndex : index - 1;
         });
 
-        this.setState({
-            activeIndexes
-        });
+        setActiveIndexes(newActiveIndexes);
     }
 
-    render() {
-     //console.log(this.props.images); 
-     return (
-        <div className="carousel w-full flex justify-center items-center">
-          <button 
-            className="arrow arrow-left" 
-            onClick={this.previousSlide}
-            aria-label="Previous slide"
-          >
-          </button>
-          <div className="carousel-images">
-            {this.state.activeIndexes.map(index => {
-                const image = this.props.images[index];
-                return (
-                    <img 
-                        key={index}
-                        src={image.src} 
-                        alt={image.alt} 
-                        className="carousel-image"
-                        width="631"
-                        height="658"
-                    />
-                );
-            })}
-          </div>
-          <button 
-            className="arrow arrow-right" 
-            onClick={this.nextSlide}
-            aria-label="Next slide"
-          >
-          </button>
+    const handlers = useSwipeable({
+        onSwipedLeft: nextSlide,
+        onSwipedRight: previousSlide
+    });
+
+    return (
+        <div {...handlers} className="carousel w-full flex justify-center items-center">
+            <button 
+                className="arrow arrow-left" 
+                onClick={previousSlide}
+                aria-label="Previous slide"
+            >
+            </button>
+            <div className="carousel-images">
+                {activeIndexes.map(index => {
+                    const image = props.images[index];
+                    return (
+                        <img 
+                            key={index}
+                            src={image.src} 
+                            alt={image.alt} 
+                            className="carousel-image"
+                            width="631"
+                            height="658"
+                        />
+                    );
+                })}
+            </div>
+            <button 
+                className="arrow arrow-right" 
+                onClick={nextSlide}
+                aria-label="Next slide"
+            >
+            </button>
         </div>
-      );
-      
-    }
+    );
 }
+
 export default Carousel;
