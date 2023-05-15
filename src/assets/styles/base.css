@@ -3,22 +3,25 @@
 @tailwind utilities;
 
 @layer components {
-
+  .hero-content {
+    height: 100%;
+  }
   .swiper {
     width: 100%;
-    height: 80%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
+    background-image: image('~/images/hero2.svg');
   }
   
 
 .swiper-slide {
-  height: 70%;
+  height: 100%;
   text-align: center;
   font-size: 18px;
-  background: #fff;
+ 
 
   /* Center slide text vertically */
   display: flex;
@@ -34,13 +37,6 @@
 }
 
 
-.swiper-slide {
-  width: 13%;
-}
-
-.swiper-slide-active {
-  width: 70%;
-}
 
 
 
@@ -107,46 +103,4 @@
     @apply rotate-45 translate-y-[-8px] translate-x-[14px];
   }
   
-  .carousel {
-    display: flex;
-    align-items: center;
-    padding-left: 3%;
-    padding-right: 3%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
- 
-  }
-
-.carousel-images {
-    display: flex;
-    gap: 1%;
-    
-    
-}
-
-.carousel-images img {
-  max-width: calc(100vw / 3.5);
-    object-fit: cover;
-}
-
-
-
-.arrow {
-  border: solid  rgb(70, 106, 139);;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 15px;
-  margin: 15px;
-}
-
-.arrow-left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.arrow-right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
 }  

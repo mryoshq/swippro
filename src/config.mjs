@@ -1,4 +1,4 @@
-import defaultImage from './assets/images/hero.svg';
+import defaultImage from './assets/images/hero2.svg';
 
 const CONFIG = {
   name: 'Swippro',

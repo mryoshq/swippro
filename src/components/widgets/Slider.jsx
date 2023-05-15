@@ -1,11 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import hero from '~/assets/images/hero2.svg';
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-
-import { Pagination } from "swiper";
 
 
 function Slider({ images }) {
@@ -13,26 +11,37 @@ function Slider({ images }) {
     <Swiper
       loop={true}
       initialSlide={1}
-      slidesPerView={"3"}
+      slidesPerView={1} // Default to one slide per view
       centeredSlides={true}
       spaceBetween={30}
       pagination={{
-        clickable: true,
+        clickable: false,
       }}
-      modules={[Pagination]}
+      modules={[]}
       className="mySwiper"
+      style={{ backgroundImage:hero } }
+      breakpoints={{
+        // when window width is >= 767px
+        425: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      }}
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
           <img 
             src={image.src} 
             alt={image.alt} 
-            className="carousel-image"
+            className="swiper-slide"
             width="631"
             height="658"
+            
+           
           />
         </SwiperSlide>
       ))}
+     
     </Swiper>
   );
 }
