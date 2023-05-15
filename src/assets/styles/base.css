@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-    background-image: image('~/images/hero2.svg');
+   
   }
   
 
@@ -21,7 +21,7 @@
   height: 100%;
   text-align: center;
   font-size: 18px;
- 
+  background-image: image('~/assets/images/hero2.svg');
 
   /* Center slide text vertically */
   display: flex;

@@ -19,7 +19,7 @@ function Slider({ images }) {
       }}
       modules={[]}
       className="mySwiper"
-      style={{ backgroundImage:hero } }
+      
       breakpoints={{
         // when window width is >= 767px
         425: {
