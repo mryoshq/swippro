@@ -28,7 +28,7 @@ const {
 } = Astro.props;
 ---
 
-<section class="relative w-full md:flex position-absolute  md:h-auto">
+<section class="relative w-full md:flex position-absolute md:h-auto">
   <div class="relative w-full h-full">
     {
       images && (
@@ -45,14 +45,14 @@ const {
 
     <div style={{
       display: 'flex',
-      justifyContent: 'top',
+      justifyContent: 'center',
       alignItems: 'center',
       fontSize: '3em',
       color: 'white',
       flexDirection: 'column',
       backgroundImage: `url(${frame.src})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
+      backgroundPosition: 'top',
     }}>
       <span>Build your</span>
       <span style={{ color: 'rgb(70, 106, 139)' }}>Network NOW!</span>
