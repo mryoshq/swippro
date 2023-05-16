@@ -30,7 +30,7 @@ const {
   isAfterContent = false,
 } = Astro.props;
 ---
-<section class="list={[{ 'pt-0 md:pt-0': isAfterContent }, 'bg-rgb(228, 236, 230) dark:bg-slate-800  ']}">
+<section class="list={[{ 'pt-0 md:pt-0': isAfterContent }, 'bg-rgb(228, 236, 230) dark:bg-slate-800 md:py-20']}">
   <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
     {
       (title || subtitle || highlight) && (
@@ -55,6 +55,7 @@ const {
       )
     }
   </div>
+  
   <div class="mx-auto max-w-7xl p-4 md:px-8">
     <div class={`md:flex ${isReversed ? 'md:flex-row-reverse' : ''} md:gap-16`}>
       <div class="md:basis-1/2 self-center">
@@ -80,11 +81,11 @@ const {
           )
         }
       </div>
-      <div aria-hidden="true" class="text-center">
+      <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
 
         {
           image && (
-            <div class="relative m-auto max-w-l">
+            <div class="relative m-auto max-w-l ">
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (

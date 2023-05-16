@@ -8,13 +8,14 @@ import Content from '~/components/widgets/Content.astro';
 import Note from '~/components/widgets/Note.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 import hero from '~/assets/images/hero2.svg';
-import slider1 from '~/assets/images/slider/3.png';
-import slider2 from '~/assets/images/slider/2.png';
-import slider3 from '~/assets/images/slider/1.png';
-import slider4 from '~/assets/images/slider/4.png';
-import slider5 from '~/assets/images/slider/5.png';
-import slider6 from '~/assets/images/slider/6.png';
+import slider1 from '~/assets/images/slider/3.svg';
+import slider2 from '~/assets/images/slider/2.svg';
+import slider3 from '~/assets/images/slider/1.svg';
+import slider4 from '~/assets/images/slider/4.svg';
+import slider5 from '~/assets/images/slider/5.svg';
+import slider6 from '~/assets/images/slider/6.svg';
 
 
 
@@ -28,6 +29,7 @@ const meta = {
 <Layout {meta}>
 
   <Hero
+  
     callToAction={{ text: 'Google Play', href: '' }}
     callToAction2={{ text: 'App store', href: '' }}
     image={{ src: hero, alt: 'Front image' }}
@@ -47,7 +49,6 @@ const meta = {
 
   <Content
   isReversed
-  isAfterContent
   items={[
     {
       title: 'As an entrepreneur find your co-founder, choose wisely like a spouse 😂',
@@ -59,7 +60,7 @@ const meta = {
       title: 'Nerwork and meet like minded indviduals who share your interests in work, technology and arts',
     },
     {
-      title: 'Do not settle for less - find the right match with Swippro today! - Install now ',
+      title: 'Do not settle for less - find the right match with Swippro today! - Install now '
     }
   ]}
   image={{
@@ -114,7 +115,7 @@ const meta = {
       {
         title: 'Grow your network!',
         icon: 'tabler:check',
-      },
+      }
     ]}
     image={{
       src: import('~/assets/images/creativity.jpg'),
@@ -127,11 +128,29 @@ const meta = {
   <Stats
     items={[
       { name: 'Downloads', value: '132K' },
-      { name: 'Stars', value: '24.8K' },
-      { name: 'Forks', value: '10.3K' },
+      { name: 'Matches', value: '24.8K' },
+      { name: 'Companies', value: '10.3K' },
       { name: 'Users', value: '48.4K' },
     ]}
   />
+  <CallToAction
+  callToAction={{
+    text: 'Download now',
+    href: '#',
+    icon: 'tabler:download',
+  }}
+>
+  <Fragment slot="title">
+    What are you waiting for ?? 
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    Hop in for an astonishing ride <br class="hidden md:inline" />Don't
+    waste more time! :P
+  </Fragment>
+</CallToAction>
+
+
 
   <FAQs
     

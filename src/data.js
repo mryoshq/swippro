@@ -2,9 +2,14 @@ import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
+   
     {
       text: 'Features',
       href: '/features',
+    },
+    {
+      text: 'Contact Us',
+      href: '/contact',
     },
     {
       text: 'About',
